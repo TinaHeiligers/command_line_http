@@ -1,7 +1,7 @@
 require 'httparty';
 # first log in as an admin
 login_with_email = 'http://localhost:8080/admin/api/v1/session/loginWithEmail'
-login_response = HTTParty.post(login_with_email, body: {email: 'bwayne@acme.com', password: 'password'})
+login_response = HTTParty.post(login_with_email, body: {email: 'test+bwayne@tallwave.com', password: 'password'})
 session_token = login_response['sessionToken']
 admin_companyId = login_response['companyId']
 # create some users

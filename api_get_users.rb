@@ -1,6 +1,6 @@
 require 'httparty'
 login_to_mobile = 'http://localhost:8080/api/v1/session'
-login_response = HTTParty.post(login_to_mobile, body: {email: 'bwayne@acme.com', password: 'password'})
+login_response = HTTParty.post(login_to_mobile, body: {email: 'test+bwayne@tallwave.com', password: 'password'})
 session_token = login_response['sessionToken']
 admin_companyId = login_response['companyId']
 
